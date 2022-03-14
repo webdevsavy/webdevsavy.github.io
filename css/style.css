@@ -1,0 +1,191 @@
+*,*::before,*::after {
+    margin: 0px;
+}
+
+:root {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    z-index: -1;
+}
+
+main {
+    user-select: none;
+    width: 60%;
+    margin: auto;
+    background-color: transparent;
+    z-index: 1;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > * {
+    margin: 10px;
+    text-align: center;
+    background-color: black;
+}
+
+a {
+    color: lightskyblue;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.card {
+    transition: left 1s;
+    user-select: none;
+    position: absolute;
+    width: 480px;
+    left: -380px;
+}
+
+.card:hover, .card:active {
+    left: 0px;
+}
+
+.card-right {
+    transition: right 1s;
+    user-select: none;
+    position: absolute;
+    width: 380px;
+    right: -380px;
+}
+
+.card-right:hover, .card-right:active {
+    right: 0px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0px 10px;
+    width: 360px;
+    height: 140px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    outline: 1px solid var(--primary-color);
+}
+
+.description a {
+    color: var(--highlight-color);
+}
+
+.description p {
+    background-color: var(--background-color);
+}
+
+.tab {
+    position: absolute;
+    border-top-left-radius: 20% 20px;
+    border-top-right-radius: 20% 20px;
+    text-align: center;
+    user-select: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+    width: 142px;
+    height: 24px;
+    top: 58px;
+    right: 0px;
+    transform: rotate(90deg) translateY(16px);
+    background-color: var(--primary-color);
+}
+
+.tab-right {
+    position: absolute;
+    border-top-left-radius: 20% 20px;
+    border-top-right-radius: 20% 20px;
+    text-align: center;
+    user-select: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+    width: 142px;
+    height: 24px;
+    top: 58px;
+    left: 0px;
+    transform: rotate(-90deg) translateY(-84px);
+    background-color: var(--primary-color);
+}
+
+#mandelbrot {
+    top: 30px;
+    --primary-color: #5E97D0;
+    --background-color: #044f88;
+    --text-color: #D5E4F3;
+    --highlight-color: yellow;
+}
+
+#rustnut {
+    top: 250px;
+    --primary-color: rgb(183,65,14);
+    --background-color: rgb(75, 0, 0);
+    --text-color: lightgreen;
+    --highlight-color: yellow;
+}
+
+#jsmd {
+    top: 540px;
+    --primary-color: yellow;
+    --background-color: rgb(182, 182, 0);
+    --text-color: black;
+    --highlight-color: yellow;
+}
+
+#dietdiary {
+    top: 760px;
+    --primary-color: olive;
+    --background-color: brown;
+    --text-color: orange;
+    --highlight-color: yellow;
+}
+
+#placeholder1 {
+    top: 30px;
+    --primary-color: slategray;
+    --background-color: darkgray;
+    --text-color: black;
+    --highlight-color: yellow;
+}
+
+#placeholder2 {
+    top: 250px;
+    --primary-color: slategray;
+    --background-color: darkgray;
+    --text-color: black;
+    --highlight-color: yellow;
+}
+
+#placeholder3 {
+    top: 540px;
+    --primary-color: slategray;
+    --background-color: darkgray;
+    --text-color: black;
+    --highlight-color: yellow;
+}
+
+#placeholder4 {
+    top: 760px;
+    --primary-color: slategray;
+    --background-color: darkgray;
+    --text-color: black;
+    --highlight-color: yellow;
+}
