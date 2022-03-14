@@ -32,8 +32,6 @@ const getColor = (x, y) => {
     let x0 = x - canvas.width / 2
     let y0 = y - canvas.height / 2
     let r = 200
-    let eq = x0 * x0 + y0 * y0 <= r * r
-    let fl = x0 * x0 + y0 * y0 >= (r - 2) * (r - 2)
     
     if (x == 0) return [0, 0, 0]
 
@@ -51,23 +49,6 @@ const getColor = (x, y) => {
     return [r,g,b]
 
 }
-
-//setInterval(render, 140)
-/*
-let previousTimeStamp;
-
-function step(timestamp) {
-
-    if (previousTimeStamp !== timestamp) {
-        render()
-    }
-
-    previousTimeStamp = timestamp
-    window.requestAnimationFrame(step)
-}
-
-window.requestAnimationFrame(step)
-*/
 
 render()
 
